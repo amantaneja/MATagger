@@ -9,7 +9,7 @@ iOS Tagger for tagging names in comments/textfields. Written in Swift 4.
 
 # Sample
 
-<img src="https://github.com/amantaneja/Tagger/blob/master/Tagger.gif" >
+<img src="https://github.com/amantaneja/Tagger/blob/master/Tagger.gif" height="600">
 
 # Features
 
