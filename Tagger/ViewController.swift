@@ -172,8 +172,8 @@ extension ViewController : UITextViewDelegate {
         
         let combination = NSMutableAttributedString()
         combination.append(textView.attributedText)
-        combination.append(attributedText!)
-        combination.replaceCharacters(in: NSRange(location: position-length, length: length), with: "")
+//        combination.append(attributedText!)
+        combination.replaceCharacters(in: NSRange(location: position-length, length: length), with: attributedText!)
         
         textView.attributedText = combination
         
@@ -259,7 +259,7 @@ extension ViewController : UITextViewDelegate {
         let rangeOfString = NSRange(location: position-length-1, length: length)
         if let swiftRange = Range(rangeOfString, in: textView.text) {
             
-            var dealSubString = textView.text[swiftRange.lowerBound...]
+            var dealSubString = textView.text[swiftRange.lowerBound...swiftRange.upperBound]
             _ = dealSubString.removeFirst()
             if ViewController.isValidString(String(dealSubString)) {
                 manageTagging(textString: String(dealSubString))
