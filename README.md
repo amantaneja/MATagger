@@ -1,4 +1,4 @@
-# Tagger
+# MATagger
 
 iOS Tagger for tagging names in comments/textfields. Written in Swift 4.
 
